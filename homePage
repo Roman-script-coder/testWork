@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Главная</title>
+        <meta content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body onload="fillForm()">
+    	<div class="modal">
+            <div><input class="editNameForm" required placeholder="Фамилия Имя Отчество" ></div>
+			<div><input class="editBirthDateForm" required placeholder="ГГГГ-ММ-ДД"></div>
+			<div><textarea class="editDescriptionForm" placeholder="Описание" maxlength="100" rows="5"></textarea></div>
+			<button onclick="saveEditForm()">Сохранить</button><button onclick="closeEditForm();">Отменить</button>
+        </div>
+        <button class="transition" onclick="jumpToNewForm()">Добавить запись</button>
+        <div class="pole">
+        	<div class="firstName">Имя</div>
+        	<div class="lastName">Фамилия</div>
+        	<div class="middleName">Отчетсво</div>
+        	<div class="birthDate">Дата рождения</div>
+        	<div class="description">Описание</div>
+        	<div class="actions">Действия</div>
+        </div>
+        <div class="wrapper">
+        </div>
+        <script type='text/javascript' src='javascript.js'></script>
+    </body>
+</html>
