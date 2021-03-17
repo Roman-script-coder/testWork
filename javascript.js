@@ -68,7 +68,7 @@ function saveForm() {
 			let label = JSON.stringify(objectAllForm); 
 			localStorage.setItem('form', label);
 		}
-		history.back();
+		document.location.href = 'index.html';
 	}
 }
 const modal = document.querySelector('.modal');
